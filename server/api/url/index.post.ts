@@ -8,6 +8,8 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const schema = await urlSchema.parse(body);
 
+  // validate url
+
   // generate code
   let urlCode = await generateCode(6);
 
@@ -30,7 +32,7 @@ export default defineEventHandler(async (event) => {
     },
   });
   return {
-    message: "Short Url created!",
+    message: "Short URL created!",
     shortUrl: `${config.baseURL}/${urlCode}`,
   };
 });

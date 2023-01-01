@@ -3,9 +3,9 @@ import prisma from "../../database";
 export default defineEventHandler(async (event) => {
   const params = getRouterParams(event);
 
-  const url = await prisma.url.findUnique({
+  const url = await prisma.url.findFirst({
     where: {
-      id: params.code,
+      urlCode: params.code,
     },
   });
   return {
