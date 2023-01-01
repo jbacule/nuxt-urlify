@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Urlify
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A simple URL Shortener made with Nuxt 3, Prisma and Tailwindcss.
 
 ## Setup
 
